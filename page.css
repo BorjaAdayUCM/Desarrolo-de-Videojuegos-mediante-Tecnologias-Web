@@ -1,0 +1,49 @@
+
+body {
+	background-size: contain;
+}
+.title {
+	font-size: 30px;
+	color: white;
+}
+.header {
+    height: 30px;
+}
+
+.header h2.title {
+    text-align: center;
+    height: 25px;
+}
+
+.nav-bar {
+	align-items: flex-start; 
+	top:0;
+	font-size: 120%;
+	background: #122562;
+}
+
+.nav-bar ul{
+    list-style-type: none;
+	margin:0;
+	padding:0 19%;/*Para alinearlo con el contenido*/
+	display: flex;
+	overflow: hidden;
+	font-size: x-large;
+	justify-content: space-around;
+	border: 0;
+}
+
+.nav-list {
+	-webkit-box-align: center;
+	align-items: center;
+	display: felx;
+	-webkit-box-pack: justify;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: rgb(221, 219, 219);
+}
+
+
+

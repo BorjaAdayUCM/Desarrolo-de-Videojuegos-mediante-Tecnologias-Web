@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./assets/pageimg/logo.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <link rel="stylesheet" href="./pagecss/page.css">
+    
+     <link rel="stylesheet" href="./pagecss/game.css">
+    <script src="phaser.min.js"></script>
+
+    <title>¡The Wall!</title>
+    
+</head>
+
+<body background="">
+    <div class="content">
+        
+        <div class="nav-bar">
+            <ul class="nav-list">
+
+                <li class="nav-list-link"><a href="./aboutus.html">About us</a></li>
+                <li class="nav-list-link"><a href="./history.html">History</a></li>
+                
+                <li class="nav-list-link"><a href="./index.html"><img src="./assets/pageimg/logo.png" height="48" width="36"></a></li>
+                
+                <li class="nav-list-link"><a href="./characters.html">Characters & objects</a></li>
+                <li class="nav-list-link"><a href="./index.html">Play</a></li>
+            </ul>    
+        </div>
+        <div class="info">
+               
+                <script type="module" >
+                    import level1 from './scenes/level1.js';
+                    import level2 from './scenes/level2.js';
+                    import gameover from './scenes/gameover.js';
+                    import title from './scenes/title.js';
+                    import menu from './scenes/menu.js';
+                    import win from './scenes/win.js';
+                    import boot from './scenes/boot.js';
+
+                    let myCustomCanvas = document.createElement('canvas');
+
+                    myCustomCanvas.id = 'myCustomCanvas';
+                    let style0 = 'border-radius: 10px; box-shadow: -9px 9px 20px -7px rgba(0,0,0,0.53);';
+                    let style1 = 'text-align: center; background-color: #26262b; color: white; width: 80%; margin: 10%;';
+
+                    myCustomCanvas.style = style0.concat(style1);
+
+                    var muteMusic = true;
+
+                    var config = {
+                        type: Phaser.WEBGL,
+                        parent: 'phaser-example',
+                        width: 1000,
+                        height: 608,
+                        canvas: myCustomCanvas,
+                        pixelArt: true,
+                        input: {
+                            gamepad: true
+                        },
+                        fps: {
+                            target: 60,
+                            forceSetTimeOut: true
+                        },
+                        scene: [boot, title, level1, level2, menu, gameover, win],
+                        physics: { default: 'matter', matter: { gravity: { x: 0, y: 0.38 }, debug: true } }
+                        
+                    };
+                    new Phaser.Game(config);
+                </script>
+        </div>
+
+    </div>
+</body>
+
+</html>

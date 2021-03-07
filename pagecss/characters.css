@@ -1,0 +1,52 @@
+div#info {
+    margin: 5%;
+    padding: 5% 8%;
+    
+    border-radius: 15px;
+   color: black;
+}
+
+div#info div#character, div#character2, div#enemy, div#potion, div#potion2 {
+   display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   
+   border-radius: 15px;
+}
+
+div#info div#character {
+    background-color: #36a3ff;
+}
+
+div#info div#character2 {
+    background-color: #0060b5;
+}
+
+div#info div#enemy {
+    background-color: #790f00;
+}
+
+div#info div#potion {
+    background-color: #25c000;
+}
+
+div#info div#potion2 {
+    background-color: #0b8200;
+}
+
+
+div#info div#character div#image, div#character2 div#image, div#enemy div#image, div#potion div#image, div#potion2 div#image {
+    max-width:100%;
+    height:auto;
+}
+
+div#info div#character div#details, div#character2 div#details, div#enemy div#details, div#potion div#details, div#potion2 div#details {
+   margin: 5%;
+   padding: 2%;
+   width: 43%;
+   border: 1px solid #0060b5;
+   border-radius: 10px;
+   font-size: 25px;
+}
+
