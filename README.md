@@ -8,7 +8,7 @@ Este repositorio contiene un juego de plataformas en 2D diseñado para la asigna
 
 <b>Enlace al juego:</b> [Juego][webJuego]
 
-[webJuego]: https://borjaadayucm.github.io/Desarrolo-de-videojuegos-mediante-tecnologias-web
+[webJuego]: https://borjaadayucm.github.io/Desarrolo-de-Videojuegos-mediante-Tecnologias-Web/
 
 Podrás encontrar los diferentes archivos que componen el proyecto:
 - GDD.md: En este documento encontrarás el diseño específico del juego implementado. Encontrarás en él una síntesis del juego con su concepto, su historia, el género del juego y demás datos importantes para el desarrollo del mismo.
